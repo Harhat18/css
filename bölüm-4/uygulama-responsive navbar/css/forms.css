@@ -1,6 +1,6 @@
 
 .signup-page{
-    padding-top: 20px;
+    padding-top: 60px;
 } 
 .signup-title {
     text-align: center;
@@ -9,8 +9,14 @@
 }
 
 .signup-form {
-    width: 500px;
-    margin: auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .signup-form {
+        width: 500px;
+        margin: auto;
+    }
 }
 
 .signup-form label,
