@@ -3,18 +3,18 @@
   padding: 0 1.4rem;
   margin: auto;
 }
-.btn-primary,
-.btn-light,
-.btn-dark {
+
+.btn-dark, .btn-light, .btn-primary {
   display: inline-block;
   padding: 0.7rem 2rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
 }
+
 .btn-primary {
   color: #333;
-  background-color: #ef6d6d;
+  background-color: #EF6D6D;
 }
 .btn-light {
   color: #333;
@@ -24,20 +24,23 @@
   color: #fff;
   background-color: #333;
 }
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
-  background-color: #ef6d6d;
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #EF6D6D;
 }
+
 .bg-dark {
   background-color: #333;
 }
 .bg-primary {
-  background-color: #ef6d6d;
+  background-color: #EF6D6D;
 }
 .bg-light {
   background-color: #f4f4f4;
 }
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -50,6 +53,7 @@ input[class^="btn-"]:hover {
 .py-4 {
   padding: 4rem 0;
 }
+
 .my-1 {
   margin: 1rem 0;
 }
@@ -62,26 +66,55 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 4rem 0;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.border-bottom {
+  height: 3px;
+  width: 3rem;
+  background-color: #EF6D6D;
+  margin: 0 auto 1rem auto;
+}
+
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #fff;
   font-family: "Prompt", sans-serif;
   line-height: 1.5;
 }
+
 a {
   text-decoration: none;
   color: #333;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   width: 100%;
 }
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -109,8 +142,9 @@ img {
   border-color: #ccc;
 }
 .main-nav__items li a.active {
-  border-color: #ef6d6d;
+  border-color: #EF6D6D;
 }
+
 #header__home {
   background: url("../img/bg.jpeg") no-repeat center right/cover;
   height: 100vh;
@@ -127,3 +161,34 @@ img {
 #header__home .typewrite {
   display: block;
 }
+
+#home__a .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+#home__a .skills i {
+  color: #EF6D6D;
+  padding-bottom: 0.5rem;
+}
+#home__b .profile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home__b .profile li.title {
+  font-size: 1.5rem;
+}
+#home__b .profile li.number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#home__b .profile div {
+  padding: 3rem 0;
+}
+#home__b .profile div:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+#home__b .profile div:nth-child(even) {
+  background-color: #ccc;
+}/*# sourceMappingURL=main.css.map */
